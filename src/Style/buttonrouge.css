@@ -1,0 +1,23 @@
+.button{
+	-fx-background-radius: 20;
+	-fx-background-color: #ef9a9a;
+	-fx-border-radius: 20;
+	-fx-border-color: red;
+	-fx-border-width: 2;
+	-fx-font-family: "Georgia";
+	-fx-text-fill: black;
+	-fx-font-size: 14;
+}
+
+.button:hover{
+	-fx-border-color: red;
+	-fx-border-width: 4;
+	-fx-background-color:  white;
+	-fx-text-fill: black;
+}
+
+.button:pressed{
+	-fx-border-color: red;
+	-fx-background-color:  red;
+	-fx-text-fill: white;
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="690.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AcceuilController">
+   <top>
+      <HBox id="top" prefHeight="46.0" prefWidth="1350.0" stylesheets="@../Style/base.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane id="topleft" prefHeight="47.0" prefWidth="1356.0" stylesheets="@../Style/base.css">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/logo-education.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="55.0" layoutY="-2.0" prefHeight="44.0" prefWidth="122.0">
+                     <children>
+                        <Label fx:id="abrev" text="KTT" textFill="#03a9f4">
+                           <font>
+                              <Font name="Cambria Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <Line endX="-27.0" endY="-210.0" layoutX="220.0" layoutY="211.0" startX="-27.0" startY="-165.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Button layoutX="970.0" layoutY="6.0" mnemonicParsing="false" onAction="#Historique" text="Consulter l'historique">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/edit-11-xl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="1187.0" layoutY="6.0" mnemonicParsing="false" onAction="#Parametre" text="Paramètres">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/settings-xl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="203.0" layoutY="4.0" mnemonicParsing="false" onAction="#Acceuil" text="Retourner à l'Acceuil">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/house-xl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ProgressIndicator fx:id="progress" layoutX="392.0" layoutY="10.0" prefHeight="30.0" prefWidth="35.0" stylesheets="@../Style/progress.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox id="left" prefHeight="642.0" prefWidth="195.0" stylesheets="@../Style/base.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Eleve" prefHeight="100.0" prefWidth="195.0" text="Elèves">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/user-2-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Classe" prefHeight="100.0" prefWidth="195.0" text="Salles de classes">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/home-4-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Frais_Individuel" prefHeight="100.0" prefWidth="195.0" text="Frais de Scolarité &#10;&#9;Individuel">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/businessman-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Frais_Collectif" prefHeight="100.0" prefWidth="195.0" text="Frais de Scolarité &#10;&#9;Collectifs">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/conference-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Budget" prefHeight="100.0" prefWidth="195.0" text="Budget Prévisionnel">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/book-16-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Quitter" prefHeight="100.0" prefWidth="195.0" text="Quitter">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/power-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="25.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="pane" prefHeight="641.0" prefWidth="1140.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

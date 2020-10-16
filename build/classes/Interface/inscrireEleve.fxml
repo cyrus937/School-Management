@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InscrireController">
+   <children>
+      <Label layoutX="234.0" layoutY="25.0" text="Inscription">
+         <font>
+            <Font name="Gabriola" size="40.0" />
+         </font>
+      </Label>
+      <HBox layoutX="142.0" layoutY="107.0">
+         <children>
+            <VBox spacing="30.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="27.0" text="Matricule">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font></Label>
+                  <Label text="Nom">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="Prenom">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="10.0" layoutY="44.0" text="Classe">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font></Label>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </VBox>
+            <VBox spacing="15.0">
+               <children>
+                  <TextField fx:id="matricule" promptText="Matricule" stylesheets="@../Style/textfield.css">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="nom" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0" promptText="Nom" stylesheets="@../Style/textfield.css">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="prenom" layoutX="10.0" layoutY="35.0" promptText="Prenom" stylesheets="@../Style/textfield.css">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font></TextField>
+                  <ComboBox fx:id="classe" prefHeight="30.0" prefWidth="200.0" stylesheets="@../Style/combo.css" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <Button layoutX="221.0" layoutY="316.0" mnemonicParsing="false" onAction="#Inscrire" prefHeight="39.0" prefWidth="142.0" stylesheets="@../Style/button.css" text="Inscrire" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1155.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreerBudgetController">
+   <children>
+      <ScrollPane prefHeight="640.0" prefWidth="1155.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1100.0" prefWidth="1140.0">
+               <children>
+                  <TableView fx:id="tableActif" layoutX="30.0" layoutY="136.0" prefHeight="390.0" prefWidth="1086.0" stylesheets="@../Style/table.css">
+                    <columns>
+                      <TableColumn fx:id="actif" minWidth="20.0" prefWidth="115.0" text="Actifs" />
+                      <TableColumn fx:id="septActif" minWidth="20.0" onEditCommit="#ChangeSeptActif" prefWidth="79.99996948242188" text="Septembre" />
+                        <TableColumn fx:id="octActif" minWidth="20.0" onEditCommit="#ChangeOctActif" prefWidth="96.0" text="Octobre" />
+                        <TableColumn fx:id="novActif" minWidth="20.0" onEditCommit="#ChangeNovActif" prefWidth="96.0" text="Novembre" />
+                        <TableColumn fx:id="decActif" minWidth="20.0" onEditCommit="#ChangeDecActif" prefWidth="96.0" text="Décembre" />
+                        <TableColumn fx:id="janActif" minWidth="20.0" onEditCommit="#ChangeJanActif" prefWidth="96.0" text="Janvier" />
+                        <TableColumn fx:id="fevActif" minWidth="20.0" onEditCommit="#ChangeFevActif" prefWidth="96.0" text="Février" />
+                        <TableColumn fx:id="marsActif" minWidth="20.0" onEditCommit="#ChangeMarsActif" prefWidth="96.0" text="Mars" />
+                        <TableColumn fx:id="avrilActif" minWidth="20.0" onEditCommit="#ChangeAvrilActif" prefWidth="96.0" text="Avril" />
+                        <TableColumn fx:id="maiActif" minWidth="20.0" onEditCommit="#ChangeMaiActif" prefWidth="96.0" text="Mai" />
+                        <TableColumn fx:id="juinActif" minWidth="20.0" onEditCommit="#ChangeJuinActif" prefWidth="96.0" text="Juin" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tablePassif" layoutX="29.0" layoutY="598.0" prefHeight="391.0" prefWidth="1088.0" stylesheets="@../Style/table.css">
+                     <columns>
+                        <TableColumn fx:id="passif" minWidth="20.0" prefWidth="115.0" text="Passifs" />
+                        <TableColumn fx:id="septPassif" minWidth="20.0" onEditCommit="#ChangeSeptPassif" prefWidth="77.0" text="Septembre" />
+                        <TableColumn fx:id="octPassif" minWidth="20.0" onEditCommit="#ChangeOctPassif" prefWidth="96.0" text="Octobre" />
+                        <TableColumn fx:id="novPassif" minWidth="20.0" onEditCommit="#ChangeNovPassif" prefWidth="96.0" text="Novembre" />
+                        <TableColumn fx:id="decPassif" minWidth="20.0" onEditCommit="#ChangeDecPassif" prefWidth="96.0" text="Décembre" />
+                        <TableColumn fx:id="janPassif" minWidth="20.0" onEditCommit="#ChangeJanPassif" prefWidth="96.0" text="Janvier" />
+                        <TableColumn fx:id="fevPassif" minWidth="20.0" onEditCommit="#ChangeFevPassif" prefWidth="96.0" text="Février" />
+                        <TableColumn fx:id="marsPassif" minWidth="20.0" onEditCommit="#ChangeMarsPassif" prefWidth="96.0" text="Mars" />
+                        <TableColumn fx:id="avrilPassif" minWidth="20.0" onEditCommit="#ChangeAvrilPassif" prefWidth="96.0" text="Avril" />
+                        <TableColumn fx:id="maiPassif" minWidth="20.0" onEditCommit="#ChangeMaiPassif" prefWidth="96.0" text="Mai" />
+                        <TableColumn fx:id="juinPassif" minWidth="20.0" onEditCommit="#ChangeJuinPassif" prefWidth="96.0" text="Juin" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="495.0" layoutY="90.0" text="Tableau des Actifs">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="477.0" layoutY="553.0" text="Tableau des Passifs">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="finish" layoutX="535.0" layoutY="1022.0" mnemonicParsing="false" onAction="#Terminer" prefHeight="42.0" prefWidth="96.0" stylesheets="@../Style/button.css" text="Terminer" />
+                  <Label layoutX="47.0" layoutY="38.0" text="Créer votre budget prévisionnel pour l'année en cours. Cela sera éffectué une et une seule fois.&#10;Double cliquez sur chaque case afin de modifier le contenu">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

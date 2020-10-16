@@ -1,0 +1,12 @@
+.label{
+	-fx-text-fill: black;
+}
+
+.label:hover{
+	-fx-text-fill: green;
+	-fx-underline: true;
+}
+
+.label:pressed{
+	-fx-text-fill: red;
+}

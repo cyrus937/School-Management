@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HistoriqueController">
+   <children>
+      <Label layoutX="361.0" layoutY="93.0" text="Consulter les archives de votre école">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="210.0" text="Choisir l'année scolaire">
+         <font>
+            <Font name="Times New Roman" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboAnnee" layoutX="463.0" layoutY="208.0" prefHeight="31.0" prefWidth="186.0" stylesheets="@../Style/combo.css" />
+      <Button layoutX="696.0" layoutY="208.0" mnemonicParsing="false" onAction="#Valider" prefHeight="31.0" prefWidth="91.0" stylesheets="@../Style/button.css" text="Valider" />
+      <AnchorPane fx:id="info" layoutX="345.0" layoutY="301.0">
+         <children>
+            <Label layoutX="97.0" layoutY="9.0" text="Après avoir consulté l'historique, bien vouloir &#10;remettre l'année scolaire a l'année courante &#10;pour éviter de nombreux désagréments et autres&#10;incohérences.&#10;">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="102.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/warning.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="101.0" text="Bien vouloir ne pas modifiér les données des années antérieur !!!" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="225.0" layoutY="158.0" text="Année Scolaire Courante">
+         <font>
+            <Font name="Times New Roman" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="annee" layoutX="448.0" layoutY="154.0" text="annee">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="GRAPHIC_ONLY" layoutX="50.0" layoutY="24.0" mnemonicParsing="false" onAction="#Retour" stylesheets="@../Style/button.css" text="Button">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/arrow-92-xl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ParametreController">
+   <children>
+      <Label layoutX="449.0" layoutY="68.0" text="Gestion des paramètres">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="130.0" layoutY="195.0" mnemonicParsing="false" onAction="#ChangerEcole" prefHeight="29.0" prefWidth="190.0" stylesheets="@../Style/button.css" text="Changer le nom de l'école" />
+      <Button layoutX="910.0" layoutY="195.0" mnemonicParsing="false" onAction="#CodeActivation" prefHeight="29.0" prefWidth="156.0" stylesheets="@../Style/button.css" text="Code d'Activation" />
+      <Label layoutX="711.0" layoutY="198.0" text="Activer votre produit">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="122.0" text="Année Scolaire ">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/02.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="598.0" text="© 2020 GiTECH All Rights Reserved">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="330.0" text="Produit par GITECH">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="369.0" text="Contacts">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="395.0" text="ggitech40@gmail.com">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="426.0" text="+237 6 95 10 40 50">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="460.0" text="+237 6 90 11 50 22">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="288.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/wha.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="525.0" layoutY="274.0" text="A Propos">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="291.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/email-xl.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="291.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/phone-62-xl.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="760.0" layoutY="309.0" text="Qui sommes nous ?" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="666.0" layoutY="347.0" text="Nous sommes une équipe passionné mettant a profit &#10;leurs divers compétances dans les domaines du&#10;dévéloppement, notamment dans :">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="688.0" layoutY="436.0" text="1.  Dévéloppement d'application de bureau ou logiciel">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="688.0" layoutY="471.0" text="2.  Dévéloppement d'application mobile (Androide et IOS)">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="688.0" layoutY="510.0" text="3.  Dévéloppement d'application web et sites web ou blog">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="688.0" layoutY="551.0" text="4.  Numérisation de vos données et documents">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="531.0" text="Contactez nous en cas de problème ou pour tout autres besoins">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="annee" layoutX="320.0" layoutY="122.0" text="annee">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Line endX="947.0" layoutX="167.0" layoutY="266.0" startX="-100.0" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

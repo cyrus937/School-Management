@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1155.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Scolarite_IndivController">
+   <children>
+      <ScrollPane prefHeight="640.0" prefWidth="1155.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="1140.0">
+               <children>
+                  <TableView fx:id="table" layoutX="35.0" layoutY="468.0" prefHeight="487.0" prefWidth="1060.0" stylesheets="@../Style/table.css">
+                     <columns>
+                        <TableColumn fx:id="matricule" prefWidth="105.0" text="Matricule" />
+                        <TableColumn fx:id="nom" minWidth="0.0" prefWidth="272.0" text="Nom &amp; Prénom" />
+                        <TableColumn fx:id="classe" minWidth="0.0" prefWidth="118.0" text="Classe" />
+                        <TableColumn fx:id="date" minWidth="0.0" prefWidth="216.0" text="Date Payment" />
+                        <TableColumn fx:id="paye" minWidth="0.0" prefWidth="182.0" text="Montant Payé" />
+                        <TableColumn fx:id="restant" minWidth="0.0" prefWidth="165.0" text="Montant Restant" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="search" layoutX="833.0" layoutY="421.0" prefHeight="34.0" prefWidth="262.0" promptText="Recherche" stylesheets="@../Style/textfield.css">
+                     <tooltip>
+                        <Tooltip text="Rechercher par nom, prénom, matricule, date ou montant">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                  </TextField>
+                  <Button contentDisplay="GRAPHIC_ONLY" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#Retour" stylesheets="@../Style/button.css" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/arrow-92-xl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <AnchorPane id="pane" layoutX="46.0" layoutY="55.0" prefHeight="336.0" prefWidth="1061.0" stylesheets="@../Style/boxproduit.css">
+                     <children>
+                        <TextField fx:id="recherche" layoutX="368.0" layoutY="23.0" prefHeight="30.0" prefWidth="233.0" promptText="Recherche" stylesheets="@../Style/textfield.css">
+                           <tooltip>
+                              <Tooltip text="Rechercher par nom ou prenom. Une fois trouvé ; &#10;-Cliquez sur le bouton &quot;OK&quot; ou &#10;-Appuyez sur la touche &quot;Entrer&quot; de votre clavier">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                        </TextField>
+                        <TextField fx:id="matriculeText" editable="false" layoutX="22.0" layoutY="105.0" prefWidth="200.0" promptText="Matricule" stylesheets="@../Style/textfield.css" />
+                        <TextField fx:id="nomText" editable="false" layoutX="287.0" layoutY="104.0" prefHeight="30.0" prefWidth="230.0" promptText="Nom et Prénom" stylesheets="@../Style/textfield.css" />
+                        <TextField fx:id="classeText" editable="false" layoutX="571.0" layoutY="104.0" prefWidth="200.0" promptText="Classe" stylesheets="@../Style/textfield.css" />
+                        <TextField fx:id="restantText" editable="false" layoutX="811.0" layoutY="104.0" prefHeight="30.0" prefWidth="200.0" promptText="Montant Restant" stylesheets="@../Style/textfield.css" />
+                        <TextField fx:id="paiment" layoutX="402.0" layoutY="189.0" prefHeight="30.0" prefWidth="224.0" promptText="Entrez le montant" stylesheets="@../Style/textfield.css" />
+                        <AnchorPane fx:id="result" layoutX="328.0" layoutY="245.0">
+                           <children>
+                              <Label text="Transaction bien éffectuée !!!">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="montantLabel" layoutX="211.0" layoutY="34.0" text="montant">
+                                 <font>
+                                    <Font name="Times New Roman" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="48.0" layoutY="39.0" text="Montant Restant">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="293.0" layoutY="193.0" text="Paiement">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="659.0" layoutY="187.0" mnemonicParsing="false" onAction="#Terminer" prefHeight="34.0" prefWidth="91.0" stylesheets="@../Style/button.css" text="Terminer" />
+                        <Button layoutX="616.0" layoutY="24.0" mnemonicParsing="false" onAction="#OK" stylesheets="@../Style/button.css" text="OK" />
+                        <Label layoutX="847.0" layoutY="76.0" text="Montant Restant">
+                           <font>
+                              <Font name="Times New Roman" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="650.0" layoutY="76.0" text="Classe">
+                           <font>
+                              <Font name="Times New Roman" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="351.0" layoutY="76.0" text="Nom &amp; Prénom">
+                           <font>
+                              <Font name="Times New Roman" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="91.0" layoutY="76.0" text="Matricule">
+                           <font>
+                              <Font name="Times New Roman" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="571.0" layoutY="25.0" mnemonicParsing="false" onAction="#Clear" style="-fx-background-color: transparent;" text="X">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="968.0" layoutX="136.0" layoutY="404.0" startX="-100.0" strokeWidth="2.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

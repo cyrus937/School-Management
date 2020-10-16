@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="474.0" stylesheets="@../Style/popup.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CodeActivationController">
+   <children>
+      <Label layoutX="124.0" layoutY="33.0" text="Veuillez entrer le code d'activation afin&#10;de continuer a utiliser ce produit" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Label>
+      <Button fx:id="commencer" layoutX="166.0" layoutY="188.0" mnemonicParsing="false" onAction="#Valider" prefHeight="28.0" prefWidth="143.0" stylesheets="@../Style/button.css" text="Valider" />
+      <ImageView fitHeight="67.0" fitWidth="74.0" layoutX="57.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/warning.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="code1" layoutX="102.0" layoutY="122.0" prefHeight="25.0" prefWidth="75.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="code2" layoutX="203.0" layoutY="122.0" prefHeight="25.0" prefWidth="75.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="code3" layoutX="298.0" layoutY="122.0" prefHeight="25.0" prefWidth="75.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="erreur" layoutX="391.0" layoutY="125.0" text="Erreur" textFill="RED">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

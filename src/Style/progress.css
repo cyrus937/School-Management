@@ -1,0 +1,8 @@
+
+.progress-indicator{
+	-fx-progress-color: white;
+}
+
+.progress-indicator .percentage{
+	-fx-fill: null;
+}

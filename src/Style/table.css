@@ -1,0 +1,43 @@
+.table-view{
+	-fx-base: #03a9f4;
+	-fx-control-inner-background: #e0e0e0;
+	-fx-font-size: 15;
+	-fx-table-cell-border-color: transparent;
+	-fx-table-header-border-color: transparent;
+	-fx-padding: 1;
+	-fx-font-family: "Times New Roman";
+	-fx-font-weight: bold;
+}
+
+.table-view .column-header{
+	-fx-font-size: 15;
+	-fx-background-color: #03a9f4;
+	-fx-pref-height: 35;
+    -fx-border-width:0 0 10 0;
+	-fx-font-family: "Georgia";
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell{
+    -fx-pref-height: 40;
+    
+}
+
+.table-view:row-selection .table-row-cell:filled:hover
+{
+	-fx-background-color: #5fc3ea;
+	-fx-background-insets: 0.0, 0.0 0.0 0.0 0.0;
+	-fx-text-fill: -fx-text-inner-color; 
+}
+
+.table-view:focused .table-row-cell:filled:selected
+{
+	-fx-background-color: #03a9f4;
+	-fx-background-insets: 0.0, 0.0 0.0 0.0 0.0;
+	-fx-text-fill: -fx-selection-bar-text;
+	fx-table-cell-border-color: #e040fb;
+}

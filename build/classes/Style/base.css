@@ -1,0 +1,58 @@
+#left{
+	-fx-background-color: #03a9f4;
+}
+
+#topleft{
+	-fx-background-color: black;
+}
+
+#top{
+	-fx-background-color: black;
+	-fx-border-color: black;
+}
+
+#top .button{
+	-fx-background-color: black;
+	-fx-border-color: black;
+	-fx-font-size: 14;
+	-fx-text-fill: white;
+	-fx-font-family: "Georgia";
+}
+
+#top .button:hover{
+	-fx-background-color: linear-gradient(to right, black, #90a4ae);
+	-fx-border-color: linear-gradient(to right, black, #90a4ae);
+	-fx-text-fill: white;
+}
+
+#top .button:pressed{
+	-fx-background-color: black;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+	-fx-border-width: 2;
+}
+
+#chargement{
+	-fx-background-color: #263238;
+}
+
+.button{
+	-fx-border-color: #03a9f4;
+	-fx-background-color: #03a9f4;
+	-fx-font-size: 18;
+	-fx-text-fill: white;
+	-fx-font-family: "Georgia";
+}
+
+.button:hover{
+	-fx-border-color: #607d8b;
+	-fx-background-color:  #607d8b;
+	-fx-text-fill: white;
+}
+
+.button:pressed{
+	-fx-border-color: #03a9f4;
+	-fx-background-color:  #03a9f4;
+}
+
+

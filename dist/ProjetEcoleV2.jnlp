@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProjetEcoleV2.jnlp">
+  <information>
+    <title>ProjetEcoleV2</title>
+    <vendor>public</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ProjetEcoleV2.jar" size="16511904" download="eager" />
+    <jar href="lib\controlsfx-8.0.5.jar" size="754696" download="eager" />
+    <jar href="lib\jfoenix-8.0.7-retrolambda.jar" size="2644863" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.28.0.jar" size="6043326" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ProjetEcoleV2" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Gestion_Ecole.Gestion_Ecole"  name="ProjetEcoleV2" />
+  <update check="always"/>
+</jnlp>

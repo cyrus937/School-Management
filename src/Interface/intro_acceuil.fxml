@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane1" fx:id="pane" prefHeight="641.0" prefWidth="1155.0" stylesheets="@../Style/acceuil.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IntroAcceuilController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="1155.0" opacity="0.6" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/im4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="54.0" text="Bienvenue à">
+         <font>
+            <Font name="Gabriola" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="ecole" layoutX="22.0" layoutY="115.0" text="Label">
+         <font>
+            <Font name="Gabriola" size="50.0" />
+         </font>
+      </Label>
+      <Button layoutX="89.0" layoutY="377.0" mnemonicParsing="false" onAction="#NouvelleAnnee" prefHeight="69.0" prefWidth="233.0" stylesheets="@../Style/base.css" text="Démarrer une nouvelle &#10;&#9;année scolaire">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="31.0" layoutY="176.0" text="Année Scolaire">
+         <font>
+            <Font name="Gabriola" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="annee" layoutX="291.0" layoutY="176.0" text="null">
+         <font>
+            <Font name="Gabriola" size="50.0" />
+         </font>
+      </Label>
+      <AnchorPane id="pane" layoutX="541.0" layoutY="139.0" prefHeight="477.0" prefWidth="578.0" stylesheets="@../Style/boxproduit.css">
+         <children>
+            <Label layoutX="195.0" layoutY="14.0" text="Comment Utiliser">
+               <font>
+                  <Font name="Gabriola" size="30.0" />
+               </font>
+            </Label>
+            <Label graphicTextGap="1.0" layoutX="19.0" layoutY="51.0" text="1.&#9;Pour débuter une nouvelle année scolaire, cliquer sur le bouton a votre gauche. &#10;&#9;En faisant cela, les données de l'année antiérieure deviendront obsolètes et ne &#10;&#9;pourons plus étre modifiées, mais seront toujours présentes dans l'historique.">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="128.0" text="Menu à gauche">
+               <font>
+                  <Font name="Gabriola" size="25.0" />
+               </font>
+            </Label>
+            <Label graphicTextGap="1.0" layoutX="14.0" layoutY="177.0" text="2.&#9;Dans le menu &quot;Elève&quot;, vous pouvez inscrire un élève, voir les détails &#10;&#9;informations de tous les élèves inscrit dans l'établissement et l'etat ainsi que leur &#10;&#9;scolarité&#10;&#10;3.&#9;Dans le menu &quot;Classe&quot;, vous pouvez consulter les détails de chaque classes &#10;&#9;ainsi que l'état des finances&#10;&#10;4.&#9;Dans &quot;Frais de scolarité individuel&quot;, vous pouvez enregistrer les paiements fait&#10;&#9;par un élève et avoir le montant restant. Et dans le menu &quot;Frais de scolarité &#10;&#9;collectif&quot;, vous pouvez consulter les montant perçu dans chaque classe et &#10;&#9;l'evolution des compte chaque mois&#10;&#10;5.&#9;Effectuez le budget prévisionnel de l'établissement en debut d'année dans le &#10;&#9;ménu &quot;Budget prévisionnel&quot;">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

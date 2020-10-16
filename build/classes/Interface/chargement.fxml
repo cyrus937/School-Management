@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="chargement" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="600.0" stylesheets="@../Style/base.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChargementController">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="600.0" opacity="0.4" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/lettres-alphabet.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="487.0" layoutY="385.0" text="by GiTECH" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="info" layoutX="217.0" layoutY="242.0" text="Loading Information..." textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="85.0" text="Budget &#10;&#9;Management" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="385.0" text="© 2020 GiTECH All Rights Reserved" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="558.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/02.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progress" layoutX="58.0" layoutY="204.0" prefHeight="25.0" prefWidth="500.0" progress="0.0" />
+   </children>
+</AnchorPane>
